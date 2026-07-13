@@ -1,1 +1,1 @@
-
+from .mapcanvas import MapCanvas
