@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Импорт данных — Справка TIN-Demo</title>
+  <style>
+    body { font-family: sans-serif; margin: 2em; background: #fff; color: #000; }
+    h1 { border-bottom: 1px solid #ccc; padding-bottom: .2em; }
+    ul { list-style: none; padding-left: 0; }
+    li { margin: .5em 0; }
+    a { text-decoration: none; color: #006; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Импорт данных</h1>
+  <p>TIN-Demo может открывать:</p>
+  <ul>
+    <li>DXF (LWPOLYLINE с elevation) — файлы <code>*.dxf</code></li>
+    <li>ESRI Shapefile (Polyline, PolyLineZ) — файлы <code>*.shp</code> (+ .dbf/.shx)</li>
+    <li>GeoJSON / NDJSON — файлы <code>*.geojson</code> или <code>*.json</code></li>
+    <li>Сжатые архивы <code>*.gz</code> и ZIP-файлы <code>*.zip</code> с одиночным GeoJSON внутри</li>
+  </ul>
+  <p>Если в данных нет координаты Z или атрибута высоты, программа покажет просто линии (без TIN и изолиний).</p>
+  <p>Чтобы загрузить файл:</p>
+  <ol>
+    <li>Меню <strong>Файл → Открыть…</strong> или <kbd>Ctrl+O</kbd>.</li>
+    <li>Выберите проект <code>*.mapproj</code> или векторный формат.</li>
+    <li>При загрузке проекта отобразятся сохранённые линии и TIN (если есть).</li>
+  </ol>
+  <p><a href="index.html">← Назад</a></p>
+</body>
+</html>
